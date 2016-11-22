@@ -21,23 +21,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuD-fr-tlB">
+                                <rect key="frame" x="97" y="246" width="180" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickSecondBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsS-U3-xBU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Re-YT-4HQ">
+                                <rect key="frame" x="166" y="154" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcI-t5-rEr">
+                                <rect key="frame" x="167" y="322" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ndx-88-Hih">
-                                <rect key="frame" x="65" y="123" width="245" height="50"/>
+                                <rect key="frame" x="65" y="68" width="245" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="1">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="clickCountDownBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1ZF-U5-86S"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HuD-fr-tlB">
-                                <rect key="frame" x="97" y="246" width="180" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="2"/>
-                                <connections>
-                                    <action selector="clickSecondBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gsS-U3-xBU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -45,6 +61,8 @@
                     </view>
                     <connections>
                         <outlet property="countDownBtn" destination="Ndx-88-Hih" id="0f2-k0-Huv"/>
+                        <outlet property="record1" destination="0Re-YT-4HQ" id="xSj-Jf-bsr"/>
+                        <outlet property="record2" destination="GcI-t5-rEr" id="BFF-gw-Phc"/>
                         <outlet property="secondBtn" destination="HuD-fr-tlB" id="Hok-hi-icI"/>
                     </connections>
                 </viewController>
